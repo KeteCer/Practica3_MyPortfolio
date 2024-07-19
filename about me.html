@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Patua+One&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+    <!-- Especifica el tipo de documento y la versión de HTML -->
+    <meta charset="UTF-8">
+    <!-- Configura el viewport para que el sitio sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>Meow :3</title>
+
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sección de encabezado del sitio -->
+    <header>
+        <h1>ABOUT THE ARTIST</h1>
+        <p> Digital Designer - Illustrator - Editor </p>
+    </header>
+    <!-- Barra de navegación con enlaces -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li>
+                <a href="contact.html">Contact</a>
+                <ul>
+                    <li><a href="https://www.instagram.com/bufalo.design?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+                    <li><a href="https://x.com/catsillyness">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=L3tsYC5OYhQ">Youtube</a></li>
+                </ul>
+             </li>       
+        </ul>
+    </nav>
+
+  
+    <!-- Contenido principal de la página -->
+    <main>
+        <section>
+            <h2>Acerca de este sitio</h2>
+            <p>Keterei Cervera es una artista Mexicana que se enfoca en la ilustración de personajes de caricatura 
+            con diseños agradables a un publico infantil. Sus diseños se enfocan en demostrar que un estilo cutesy
+        y cartoony puede expresar grandes emociones en personas de todas las edades.</p>
+        
+        <img src="img6.png" height="500" width="600" alt="masterminds photo icon">
+    </br> <!-- salto de linea en HTML-->
+       
+<div class="slider-container">
+        <!-- Contenedor de las imágenes -->
+        <div class="slider-content">
+            <!-- Primera imagen del slider -->
+            <div class="slider-item">
+                <img src="cat1.jpg" alt="Imagen 1">
+            </div>
+            <!-- Segunda imagen del slider -->
+            <div class="slider-item">
+                <img src="cat2.jpg" alt="Imagen 2">
+            </div>
+            <!-- Tercera imagen del slider -->
+            <div class="slider-item">
+                <img src="cat3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript para controlar el slider -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let slideIndex = 0; // Inicializa el índice de las imágenes
+
+            // Obtiene todas las imágenes del slider
+            const slides = document.querySelectorAll(".slider-item");
+            const totalSlides = slides.length; // Calcula el número total de imágenes
+
+            // Función para mostrar las imágenes del slider
+            function showSlides() {
+                slides.forEach(slide => {
+                    slide.style.display = "none"; // Oculta todas las imágenes
+                });
+
+                slideIndex++; // Aumenta el índice de la imagen actual
+                if (slideIndex > totalSlides) { slideIndex = 1; } // Reinicia el índice si es mayor que el número total de imágenes
+
+                slides[slideIndex - 1].style.display = "block"; // Muestra la imagen actual
+                setTimeout(showSlides, 2000); // Cambia de imagen cada 2 segundos
+            }
+
+            showSlides(); // Inicia la función para mostrar las imágenes
+        });
+    </script>
+
+    
+ </br> <!-- salto de linea en HTML-->
+        <h2> EL DISEÑO ES EXPRESIÓN DEJATE FLUIR </h2>
+</br>
+
+</section>
+
+    </main>
+    <!-- Pie de página del sitio -->
+    <footer>
+        <p>&copy; 2024 My first website</p>
+    </footer>
+</body>
+</html>
