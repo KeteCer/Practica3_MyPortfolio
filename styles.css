@@ -19,7 +19,7 @@ body {
 header {
      font-family: "Rubik Bubbles", system-ui;
     /* Color de fondo del encabezado */
-     background-image: url("urple.GIF") ;
+     background-image: url("urple.gif") ;
      background-size: cover;
     /* Color del texto en el encabezado */
     color: #E5DDF3;
